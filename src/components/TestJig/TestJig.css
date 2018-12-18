@@ -1,0 +1,67 @@
+.jig {
+    background: #2E83D9;
+    width: 150px;
+    height: 50px;
+    border: 10px;
+    border-radius: 5px;
+    position: relative;
+    margin: 10px;
+    top: 40px;
+}
+
+.jig:hover,
+.jig:active {
+    box-shadow: 4px 4px 4px black;
+}
+
+.progress {
+    background: #5BD167;
+    /*width: 43%;*/
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.tj_id {
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    margin: 0;
+    user-select: none;
+}
+
+.product {
+    color: white;
+    position: absolute;
+    top: 55%;
+    left: 30%;
+    user-select: none;
+}
+
+.status {
+    color: white;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: smaller;
+    user-select: none;
+}
+
+.icon {
+    content: url("TAG.png");
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 50%;
+    top: 10px;
+    left: 7px;
+}
+
+.banner {
+    position: fixed;
+    background: url("Banner.svg");
+
+}
