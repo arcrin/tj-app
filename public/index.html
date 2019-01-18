@@ -19,9 +19,30 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="../src/index.css"/>
     <title>React App</title>
   </head>
   <body>
+    <header class="header">
+      <nav>
+        <ul class="header-nav__items">
+          <li class="header-nav__item">
+            <a>Production</a>
+          </li>
+          <li class="header-nav__item">
+            <a> Wall</a>
+          </li>
+          <li class="header-nav__item">
+            <a>Report</a>
+          </li>
+          <li class="header-nav__item">
+            <a>Feedback</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
@@ -36,5 +57,8 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+  <footer class="footer">
+    Footer
+  </footer>
   </body>
 </html>

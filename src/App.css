@@ -1,32 +1,91 @@
 .App {
-  text-align: center;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-row-gap: 10px;
+    grid-column-gap: 30px;
+    grid-template-areas: "jig_list main" "footer footer";
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+
+
+.main {
+    /*background: rgba(255, 0, 0, 0.5);*/
+    height: 820px;
+    /*width: 300px;*/
+    grid-area: main;
+    display: grid;
+    grid-template-rows: 5rem 15rem;
+    grid-template-columns: repeat(6, auto);
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    grid-template-areas: "action action action . . ."
+    "tj tj ts tc tc tc"
+    "product product ts tc tc tc";
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.action {
+    background: #f3a7fe;
+    height: 5rem;
+    grid-area: action;
+    text-align: center;
+    border-radius: 5px;
+    min-width: 30rem;
 }
 
-.App-link {
-  color: #61dafb;
+.tj {
+    grid-area: tj;
+    background: #2E83D9;
+    text-align: center;
+    border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ts {
+    grid-area: ts;
+    background: #E7D5D5;
+    text-align: center;
+    border-radius: 5px;
 }
+
+.tc {
+    grid-area: tc;
+    background: #E7D5D5;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.product {
+    grid-area: product;
+    background: #5BD1D1;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.jig_list {
+    /*background: rgba(0, 4, 255, 0.5);*/
+    height: 820px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    width: 200px;
+    grid-area: jig_list;
+    text-align: center;
+    border-radius: 5px;
+    display: grid;
+    grid-auto-rows: 50px;
+    grid-row-gap: 10px;
+    overflow: scroll;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.test_jig {
+    margin: 0;
+    width: 150px;
+    height: 50px;
+    background-color: #5BD167;
+    border-radius: 5px;
+    color: white;
+}
+
