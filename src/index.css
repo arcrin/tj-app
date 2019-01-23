@@ -22,7 +22,7 @@ code {
   height: 3.5rem;
   background: #4B79D2;
   grid-area: header;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .header-nav__items {

@@ -15,7 +15,8 @@
 }
 
 .progress {
-    background: #5BD167;
+    /*background: #5BD167;*/
+    /*background: #ee3939;*/
     /*width: 43%;*/
     height: 50px;
     border-radius: 5px;
@@ -32,7 +33,7 @@
     user-select: none;
 }
 
-.product {
+.product_info {
     color: white;
     position: absolute;
     top: 55%;
@@ -60,8 +61,3 @@
     left: 7px;
 }
 
-.banner {
-    position: fixed;
-    background: url("Banner.svg");
-
-}

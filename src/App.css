@@ -18,22 +18,22 @@
     grid-area: main;
     display: grid;
     grid-template-rows: 5rem 15rem;
-    grid-template-columns: repeat(6, auto);
+    grid-template-columns: 15rem 15rem auto auto auto auto;
     grid-row-gap: 10px;
     grid-column-gap: 10px;
-    grid-template-areas: "action action action . . ."
-    "tj tj ts tc tc tc"
-    "product product ts tc tc tc";
+    grid-template-areas: "action action . . . ."
+    "tj ts tc tc . ."
+    "product ts tc tc . .";
 }
 
-.action {
-    background: #f3a7fe;
-    height: 5rem;
-    grid-area: action;
-    text-align: center;
-    border-radius: 5px;
-    min-width: 30rem;
-}
+/*.action {*/
+    /*background: #F5F9FE;*/
+    /*border: 2px solid black;*/
+    /*grid-area: action;*/
+    /*text-align: center;*/
+    /*border-radius: 5px;*/
+    /*min-width: 30rem;*/
+/*}*/
 
 .tj {
     grid-area: tj;
@@ -66,7 +66,7 @@
 .jig_list {
     /*background: rgba(0, 4, 255, 0.5);*/
     height: 820px;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    /*box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);*/
     width: 200px;
     grid-area: jig_list;
     text-align: center;
@@ -74,7 +74,7 @@
     display: grid;
     grid-auto-rows: 50px;
     grid-row-gap: 10px;
-    overflow: scroll;
+    overflow-y: scroll;
     justify-items: center;
     align-items: center;
     padding: 10px;
@@ -89,3 +89,29 @@
     color: white;
 }
 
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar
+{
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background-color: #AAA;
+    border-radius: 10px;
+    background-image: -webkit-linear-gradient(90deg,
+    rgba(0, 0, 0, .2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(0, 0, 0, .2) 50%,
+    rgba(0, 0, 0, .2) 75%,
+    transparent 75%,
+    transparent)
+}

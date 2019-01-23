@@ -1,0 +1,61 @@
+.action {
+    position: relative;
+    background: #F5F9FE;
+    border: 2px solid black;
+    grid-area: action;
+    text-align: center;
+    border-radius: 5px;
+    min-width: 30rem;
+}
+
+/*.action svg:hover {*/
+    /*box-shadow: 4px 4px 4px black;*/
+/*}*/
+
+.run {
+    position: absolute;
+    top: 10px;
+    left: 5%;
+    width: 60px;
+    height: 60px;
+}
+
+.run > svg:hover {
+    filter:url(#dropshadow)
+}
+
+.stop {
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    left: 25%;
+    width: 50px;
+    height: 50px;
+}
+
+.stop > svg:hover {
+    filter: url(#dropshadow)
+}
+
+.disconnect {
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    left: 45%;
+    width: 50px;
+    height: 50px;
+}
+
+.disconnect > svg:hover {
+    filter: url(#dropshadow)
+}
+
+.profile {
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    right: 5%;
+    height: 40px;
+    width: 130px;
+    border-radius: 5px;
+}
