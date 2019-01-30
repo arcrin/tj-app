@@ -14,7 +14,7 @@ class TestJig extends Component {
         let status = this.props.progress + "%";
 
         if (this.props.pass_fail == "fail") {
-            progress_style.background = "#ee3939";
+            progress_style.background = "#e71910";
             status = "Fail";
         }
         return (

@@ -17,7 +17,7 @@ class App extends Component {
 					<div className={"product"}>Product</div>
 				</div>
 				<div className={"jig_list"}>
-					<TestJig progress={43} pass_fail={"pass"}/>
+					<TestJig progress={60} pass_fail={"pass"}/>
 					<TestJig progress={100} pass_fail={"pass"}/>
 					<TestJig progress={50} pass_fail={"pass"}/>
 					<TestJig progress={60} pass_fail={"pass"}/>
